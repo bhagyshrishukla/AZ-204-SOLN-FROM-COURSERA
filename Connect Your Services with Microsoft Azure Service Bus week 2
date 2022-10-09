@@ -1,0 +1,111 @@
+1.
+Question 1
+You plan on creating an Azure Storage Account that will contain queues. Which type of Storage Account can you consider?
+
+Select all options that apply.
+
+1 / 1 point
+
+General-Purpose Storage Accounts v1
+
+Correct
+Queues are available as part of Azure general-purpose Storage Accounts v1.
+
+
+Blob Storage Accounts 
+
+
+General-Purpose Storage Accounts v2
+
+Correct
+Queues are available as part of Azure general-purpose Storage Accounts v2.
+
+2.
+Question 2
+Which authorization methods can you use to successfully make requests to a queue?
+
+Select all options that apply.
+
+0 / 1 point
+
+Service Credentials
+
+This should not be selected
+Queues do not have this type of authorization method available.
+
+
+Azure Active Directory 
+
+
+Shared Access Signature 
+
+Correct
+You can use a generated URI that grants limited access to objects in your storage account to clients.
+
+
+Shared Key 
+
+Correct
+You can use the encrypted key signature associated with the storage account.
+
+3.
+Question 3
+You are developing an application that needs programmatic access to your queue. Which type from the Azure Storage Client Library for .NET represents a queue instance?
+
+1 / 1 point
+
+CloudQueueClient
+
+
+CloudQueue 
+
+
+CloudStorageAccount 
+
+Correct
+CloudQueue represents one of your queue instances.
+
+4.
+Question 4
+You are developing an application that needs to programmatically send a message from a queue. Which object should you instantiate to perform this action? 
+
+1 / 1 point
+
+CloudQueue
+
+
+CloudQueueClient
+
+
+CloudQueueMessage
+
+Correct
+CloudQueueMessage represents a message.
+
+5.
+Question 5
+Which pieces of information do you need to access a queue?
+
+Select all options that apply.
+
+1 / 1 point
+
+Authorization Token
+
+Correct
+The Authorization Token is needed to access a queue.
+
+
+Storage Account Name
+
+Correct
+The Storage Account Name is needed to access a queue.
+
+
+Shared Key
+
+
+Queue Name
+
+Correct
+The Queue Name is needed to access a queue.
