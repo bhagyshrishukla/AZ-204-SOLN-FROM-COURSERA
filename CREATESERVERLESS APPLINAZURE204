@@ -1,0 +1,145 @@
+Question 1
+You’re developing an HTTP-triggered Azure Function app to process Azure Storage blob data. The app is triggered using an output binding on the blob. The app continues to time out after four minutes. The app must process the blob data. You need to ensure the app does not time out and processes the blob data.
+
+Solution: Use the Durable Function async pattern to process the blob data.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+No
+
+
+Yes
+
+Correct
+The maximum amount of time that an HTTP triggered function can take to respond to a request is 230 seconds. For longer processing times, consider using the Durable Functions async pattern.
+
+2.
+Question 2
+You are developing an order processing application named Application1. You plan to develop Application1 using Azure Functions. The order processing system contains different tasks such as checking the inventory, charging the customer, and creating a shipment. Each task should be developed separately.
+
+Which Azure function type should you create?
+
+1 / 1 point
+
+Entity
+
+
+Orchestrator
+
+
+Client
+
+
+Activity
+
+Correct
+Activity functions are the basic unit of work in a durable function orchestration. Activity functions are the functions and tasks that are orchestrated in the process.
+
+3.
+Question 3
+You are developing an application that will execute a sequence of activities in a specific order. You have to deploy your application in a serverless compute environment.
+
+Which of the below services should you create to deploy your application?
+
+1 / 1 point
+
+Azure App Service
+
+
+Azure Functions
+
+
+Durable Functions
+
+Correct
+You can use Durable Functions to implement the function chaining pattern.
+
+4.
+Question 4
+You develop a serverless application using several Azure Functions. The functions connect to data from within the code. You want to configure tracing for an Azure Function App project. You need to change configuration settings in the host.json file.
+
+Which tool should you use?
+
+1 / 1 point
+
+Azure PowerShell
+
+
+Azure Portal 
+
+
+Azure Functions Core Tools (Azure CLI)
+
+
+Visual Studio
+
+Correct
+The Functions editor built into the Azure portal lets you update your code and your function.json file directly inline. This is recommended only for small changes or proofs of concept. The best practice is to use a local development tool like VS Code.
+
+5.
+Question 5
+You are developing an application that should execute a sequence of activities in a specific order. You plan to achieve that by creating a Durable function. 
+
+Which three actions should you perform in sequence to do this?
+
+1 / 1 point
+
+Create an Azure Function with Consumption Plan. Install durable functions npm package. Create a durable function.
+
+
+Create an Azure Function with Durable Plan. Install durable functions npm package. Create a durable function.
+
+
+Create an Azure Function with App Service Plan. Install durable functions npm package. Create a durable function
+
+Correct
+The Durable Functions extension for Azure Functions is provided in the NuGet package Microsoft.Azure.WebJobs.Extensions.DurableTask. This extension must be installed in your function app.
+
+6.
+Question 6
+You plan on successfully publishing your functions project to Azure using Core Tools. Which three things must be done before?
+
+Select all options that apply.
+
+1 / 1 point
+
+Make sure your function app has the same runtime language as your function project.
+
+Correct
+A given function app only supports a single language runtime. If you already have a local functions project you want to publish, make sure to create the function app with the same language runtime. If you try to deploy a project to an app with a different runtime, publishing will halt with an error.
+
+
+Create a virtual network in Azure Portal.
+
+
+Create a web app in the Azure Portal
+
+
+Create a function app in the Azure Portal.
+
+Correct
+Before you can use the Core Tools to publish a project, you need to create a function app in Azure. This is not a capability of the Core Tools.
+
+
+Test your function using func start in the command line.
+
+Correct
+The Core Tools do not validate or test your function's code during publishing. Make sure to use func start to do some testing before you publish.
+
+7.
+Question 7
+True or False?
+
+Azure Functions tools for Visual Studio enable you to deploy an Azure Function directly from Visual Studio.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Azure Functions tools for Visual Studio enable you to deploy an Azure Function directly from Visual Studio.
