@@ -1,0 +1,185 @@
+Question 1
+You are developing an e-commerce website that handles millions of orders and captures user behavior. Users must be informed as and when there is progress for their order. 
+
+Which Azure service should you use to respond to events while processing an order?
+
+0 / 1 point
+
+Azure Event Grid
+
+
+Azure Event Hubs
+
+
+Azure Service Bus
+
+Incorrect
+Try going back and reviewing Module 1 – Choosing a messaging model in Azure to loosely connect your services.
+
+2.
+Question 2
+True or False?
+
+Each event that can pass through Event Grid can have a size of up to 128 KB. size limit of an event that can pass through Event Grid?
+
+1 / 1 point
+
+False
+
+
+True
+
+Correct
+Each event can be up to 64 KB.
+
+3.
+Question 3
+A retail chain that has 500 stores is using POS devices to receive payments and collect data. A single device can produce 1.5 megabytes (MB) of data. You need to implement a solution to receive the device data and you also need to correlate the data with the device that it provides it.
+
+Solution: Provision an Azure Event Grid. Configure the machine identifier as the partition key and enable capture.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+Yes
+
+
+No
+
+Correct
+Azure Event Grid is for managing the routing of all events from any source to any destination and the event size limit is 1MB.
+
+4.
+Question 4
+You are developing an e-commerce website that handles millions of orders and captures user behavior. Users must be informed as and when there is progress for their order.
+
+Which Azure service should you use to support order processing?
+
+0 / 1 point
+
+Azure Event Grid
+
+
+Azure Event Hubs
+
+
+Azure Service Bus
+
+Incorrect
+Try going back and reviewing Module 2 – Implement messaged-based communication workflows with Azure Service Bus.
+
+5.
+Question 5
+When using Azure Service Bus programmatically, async methods are also available for interacting with different components. Why are async methods preferred over sync methods?
+
+1 / 1 point
+
+To improve the security layer of the app
+
+
+To avoid blocking a thread while waiting on calls to complete
+
+
+So that calls will be processed in order, one by one
+
+Correct
+async methods are used to avoid blocking a thread while waiting on calls to complete.
+
+6.
+Question 6
+A retail chain that has 500 stores is using POS devices to receive payments and collect data. A single device can produce 1.5 megabytes (MB) of data. You need to implement a solution to receive the device data and you also need to correlate the data with the device that it provides it.
+
+Solution: Provision an Azure Service Bus. Configure a topic to receive the device data by using a correlation filter.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+No
+
+
+Yes
+
+Correct
+The Service Bus is for a high-value enterprise messaging, and is used for order processing and financial transactions.
+
+7.
+Question 7
+You plan on creating an application for a retail company that will handle different components of a transaction. Services like inventory, payment, and shipping will be managed by different cloud services. What service should you include in your application to ensure asynchronous communication through REST messages about transaction information?
+
+1 / 1 point
+
+Azure Notification Hubs
+
+
+Azure Queue Storage
+
+
+Azure Blob storage
+
+Correct
+Azure Queue Storage is a service for storing large numbers of messages. You access messages from anywhere in the world via authenticated calls using HTTP or HTTPS. A queue message can be up to 64 KB in size. A queue may contain millions of messages, up to the total capacity limit of a storage account. Queues are commonly used to create a backlog of work to process asynchronously.
+
+8.
+Question 8
+True or False?
+
+The Azure Storage client library uses a connection string to establish your connection. Your connection string can only be retrieved via the Azure portal.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+The connection string can be retrieved in various ways, including the Azure Portal, Azure CLI, or PowerShell.
+
+9.
+Question 9
+True or False?
+
+In Event Hubs, partitions are buffers into which communications are saved.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Partitions are buffers into which communications are saved.
+
+10.
+Question 10
+You are planning on creating an Event Hubs namespace, and an Event Hub in a new resource group. You plan on automating the creation of these resources with the help of Azure CLI.
+
+Which three commands should you use?
+
+1 / 1 point
+
+az eventhubs eventhub create
+
+Correct
+This CLI command will create an Event Hub.
+
+
+az group create
+
+Correct
+This CLI command will create a new resource group.
+
+
+az eventhubs namespace update
+
+
+az eventhubs namespace create
+
+Correct
+This CLI command will create an EventHubs namespace.
+
+
+az eventhubs eventhub update
