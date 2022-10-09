@@ -1,0 +1,164 @@
+Congratulations! You passed!
+Grade received 85.71%
+Latest Submission Grade 85.71%
+To pass 80% or higher
+1.
+Question 1
+You are developing a web application for your customer. Your customer wanted to decouple the application components using asynchronous communication. As per the business analyst, the order of messages is important as it represents the flow of data.
+
+Which Azure service do you include in your development?
+
+1 / 1 point
+
+Azure Notification Hubs
+
+
+Service Bus
+
+
+Storage Queues
+
+
+Event Grid
+
+Correct
+You should consider using Service Bus queues when:
+
+• Your solution must be able to receive messages without having to poll the queue. With Service Bus, this can be achieved through the use of the long-polling receive operation using the TCP-based protocols that Service Bus supports.
+
+• Your solution requires the queue to provide a guaranteed first-in-first-out (FIFO) ordered delivery.
+
+• Your solution must be able to support automatic duplicate detection.
+
+2.
+Question 2
+You are developing an e-commerce application. The application generates millions of orders and captures user behavior. Users must be informed as and when there is progress for their order. The application must support the sales and marketing team to analyze live user behavior.
+
+Which Azure service should you use to support order processing?
+
+0 / 1 point
+
+Azure Event Grid
+
+
+Azure Service Bus
+
+
+Azure Event Hubs
+
+Incorrect
+Try going back and reviewing How to choose a communications technology.
+
+3.
+Question 3
+You plan to use programmatically classes like QueueClient, a class that is included in a library of .NET classes that Microsoft provides and which you can use in any .NET Framework language to interact with Service Bus queue, topic, or Relay.
+
+What should you do to make use of this library?
+
+1 / 1 point
+
+Install the Microsoft.Azure.ServiceBus NuGet package
+
+
+Nothing. These classes are automatically included in any development environment.
+
+
+Install a special software that Microsoft provides to use these classes.
+
+Correct
+You can include this library in your application by adding the Microsoft.Azure.ServiceBus NuGet package.
+
+4.
+Question 4
+The Azure Service Bus library makes async methods available for interacting with queues. Why it is best to use these methods?
+
+1 / 1 point
+
+So those calls will be processed in order, one by one
+
+
+To avoid blocking a thread while waiting on calls to complete.
+
+
+To improve the security layer of the app
+
+Correct
+Async methods are used to avoid blocking a thread while waiting on calls to complete.
+
+5.
+Question 5
+You are developing an Azure messaging solution. You need to ensure that the solution meets the following requirements:
+
+-   Provide transactional support.
+
+-   Provide duplicate detection.
+
+-   Store the messages for an unlimited period of time.
+
+Which two technologies will meet the requirements?
+
+1 / 1 point
+
+Azure Service Bus Queue
+
+Correct
+Service Bus is a transactional message broker and ensures transactional integrity for all internal operations against its message stores. All transfers of messages inside of Service Bus, such as moving messages to a dead-letter queue or automatic forwarding of messages between entities, are transactional.
+
+
+Azure Service Bus Topic
+
+Correct
+If Service Bus accepts a message, it has already been stored and labeled with a sequence number. From then on, any message transfers within Service Bus are coordinated operations across entities, and will neither lead to loss (source succeeds and target fails) or to duplication (source fails and target succeeds) of the message.
+
+
+Azure Storage Queue
+
+
+Azure Event Hub
+
+6.
+Question 6
+You are developing an Azure solution to collect point-of-sale (POS) device data from 2,000 stores located throughout the world. A single device can produce 2 megabytes (MB) of data every 24 hours. Each store location has one to five devices that send data. You must store the device data in Azure Blob storage. Device data must be correlated based on a device identifier. Additional stores are expected to open in the future. 
+
+You need to implement a solution to receive the device data.
+
+Solution: Provision an Azure Service Bus. Configure a topic to receive the device data by using a correlation filter.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+No
+
+
+Yes
+
+Correct
+The Service Bus is for high-value enterprise messaging and is used for order processing and financial transactions.
+
+7.
+Question 7
+You are developing an Azure Service application that processes queue data when it receives a message from a mobile application. Messages may not be sent to the service consistently. You have the following requirements:
+
+-   Queue size must not grow larger than 80 gigabytes (GB).
+
+-   Use first-in-first-out (FIFO) ordering of messages.
+
+-   Minimize Azure costs.
+
+You need to implement the messaging solution.
+
+Solution: Use the .Net API to add a message to an Azure Service Bus Queue from the mobile application. Create an Azure Function App that uses an Azure Service Bus Queue trigger.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+No
+
+
+Yes
+
+Correct
+Yes, this is the optimal solution. Azure Service bus queue provides FIFO and the max limit is 80 GB. Azure Function provides a cost-effective way of processing messages.
+
