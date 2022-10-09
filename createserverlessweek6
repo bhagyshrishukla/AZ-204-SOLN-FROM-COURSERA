@@ -1,0 +1,101 @@
+Congratulations! You passed!
+Grade received 100%
+To pass 80% or higher
+1.
+Question 1
+In order to unlock the potential of their data and services, to which type of developers can organizations publish APIs with the help of Azure API Management?
+
+1 / 1 point
+
+Partner developers
+
+Correct
+API Management helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
+
+
+Internal developers
+
+Correct
+API Management helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
+
+
+External developers
+
+Correct
+API Management helps organizations publish APIs to external, partner, and internal developers to unlock the potential of their data and services.
+
+2.
+Question 2
+True or false?
+
+Azure API Management (APIM) is a fully managed cloud service that you can use to publish, secure, transform, maintain, and monitor APIs.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+Azure API Management (APIM) is a fully managed cloud service that you can use to publish, secure, transform, maintain, and monitor APIs.
+
+3.
+Question 3
+Which consumption tier of Azure API Management is especially suited to microservice-based architecture and event-driven systems?
+
+1 / 1 point
+
+Developer Tier
+
+
+Premium Tier
+
+
+Consumption Tier
+
+Correct
+The consumption tier is especially suited to microservice-based architectures and event-driven systems.
+
+4.
+Question 4
+In what ways can the Azure API Management service help an organization?
+
+1 / 1 point
+
+Develop APIs
+
+
+Publish APIs
+
+Correct
+Azure API Management can be used to publish APIs.
+
+
+Secure APIs
+
+Correct
+Azure API Management can be used to secure APIs.
+
+
+Monitor APIs
+
+Correct
+Azure API Management can be used to monitor APIs.
+
+5.
+Question 5
+Which data format should you use if you want to define Azure API Management policies?
+
+1 / 1 point
+
+XML
+
+
+HTML
+
+
+JSON
+
+Correct
+XML is the appropriate data format to define Azure API Management policies.
