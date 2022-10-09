@@ -1,0 +1,288 @@
+Skip to Main Content
+Coursera
+
+SEARCH IN COURSE
+Search in course
+2
+
+bhagyshri shukla
+
+
+Create Serverless Applications
+Week 7
+Course practice exam
+Practice Exam on Create Serverless Applications
+Video: VideoCourse 1 recap
+. Duration: 3 minutes3 min
+Reading: ReadingAbout the practice exam
+. Duration: 10 minutes10 min
+Quiz: Course practice exam
+10 questions
+Reading: ReadingCourse summary
+. Duration: 5 minutes5 min
+Course wrap up
+Course practice exam
+Quiz30 minutes • 30 min
+Submit your assignment
+Due November 20, 11:59 PM PSTNov 20, 11:59 PM PST
+Attempts 3 every 8 hours
+Retake the quiz in 7h 57m
+Receive grade
+To Pass 80% or higher
+Your grade
+70%
+We keep your highest score
+
+Course practice exam
+Graded Quiz. • 30 min
+
+DueNov 20, 11:59 PM PST
+Try again once you are ready
+Grade received 70%
+Latest Submission Grade 70%
+To pass 80% or higher
+Retake the assignment in 7h 57m
+1.
+Question 1
+You are planning on developing an application that needs a couple of modules to get executed. Keeping in mind that you want to keep the operating costs to a minimal value and the admin activities also minimal, which Azure service should you use?
+
+1 / 1 point
+
+Azure Virtual Machine
+
+
+Azure Logic Apps
+
+
+Azure Functions
+
+
+Azure Web App
+
+Correct
+Azure Functions would be the best solution in respecting the mentioned requirements.
+
+2.
+Question 2
+You are building an application that plans to connect to Azure Event Grid. You want to ensure that resources are allocated dynamically. You identify that you must use Azure Functions. If billing must be based on the executions of the app, what should you configure when you create the function app?
+
+1 / 1 point
+
+The Docker container and an App Service plan that uses the B1 pricing tier
+
+
+The Windows operating system and the App Service plan hosting plan
+
+
+the Docker container and an App Service plan that uses the S1 pricing tier
+
+
+The Windows operating system and the Consumption plan hosting plan
+
+Correct
+When you're using the Consumption plan, instances of the Azure Functions host are dynamically added and removed based on the number of incoming events. 
+
+3.
+Question 3
+You’re building a solution that processes files stored into Azure Storage as blob data. The solution that you are building needs to execute each time a new blob is added or modified. The app continues to time out after four minutes. You need to ensure the app does not time out and processes the blob data.
+
+Solution: Build an Azure Function with an output binding to Azure Storage, pass the HTTP trigger payload into an Azure Service Bus queue to be processed by a queue trigger function and return an immediate HTTP success response.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+No
+
+
+Yes
+
+Correct
+Large, long-running functions can cause unexpected timeout issues. Whenever possible, refactor large functions into smaller function sets that work together and return responses fast. For example, a webhook or HTTP trigger function might require an acknowledgment response within a certain time limit; it's common for webhooks to require an immediate response. You can pass the HTTP trigger payload into a queue to be processed by a queue trigger function. This approach lets you defer the actual work and return an immediate response.
+
+4.
+Question 4
+You are developing a software as a service (SaaS) offering to edit photos. Users upload photos to a web service which then stores the photos in Azure Storage Blob storage. The storage account type is General-purpose V2. When photos are uploaded, they must be processed to produce a black-and-white version of the image. The process to produce the edited version of the image should start in less than one minute.
+
+You need to design the process that starts the photo processing.
+
+Solution: Create an Azure Function App that uses the Consumption hosting model and that is triggered from the blob upload.
+
+Does the solution meet the goal?
+
+0 / 1 point
+
+No
+
+
+Yes
+
+Incorrect
+Try going back and reviewing Module 2 – Execute an Azure Function with triggers.
+
+5.
+Question 5
+You’re creating a solution that stores data into a Cosmos DB, using the SQL API. Various data will be stored periodically in the DB. You need to recommend a notification solution that sends email notifications when data is received and minimizes compute costs.
+
+What should you include in the recommendation?
+
+0 / 1 point
+
+Deploy a function app that is configured to use the Consumption plan and an Azure Event Hubs binding.
+
+
+Deploy an Azure logic app that has a SendGrid connector configured to use an Azure Cosmos DB action.
+
+
+Deploy a function app that is configured to use the Consumption plan, Cosmos DB trigger, and a SendGrid binding.
+
+
+Deploy an Azure logic app that has the Azure Cosmos DB connector configured to use a SendGrid action.
+
+Incorrect
+Try going back and reviewing Module 3 - Chain Azure Functions together using input and output bindings.
+
+6.
+Question 6
+You’re building a solution that processes files stored into Azure Storage as blob data. The solution that you are building needs to execute each time a new blob is added or modified. The app continues to time out after four minutes. You need to ensure the app does not time out and processes the blob data.
+
+Solution: Use the Durable Function async pattern to process the blob data.
+
+Does the solution meet the goal?
+
+1 / 1 point
+
+Yes
+
+
+No
+
+Correct
+The maximum amount of time that an HTTP triggered function can take to respond to a request is 230 seconds. For longer processing times, consider using the Durable Functions async pattern.
+
+7.
+Question 7
+You are developing a solution that needs to respect a specific chaining pattern and execute some activities in a specific order. Also, for cost reasons, you decide that your solution will be hosted in a serverless compute environment.
+
+Which of the below services should you create to deploy your application?
+
+1 / 1 point
+
+Durable Functions
+
+
+Azure Functions
+
+
+Azure App Service
+
+Correct
+You can use Durable Functions to implement the function chaining pattern.
+
+8.
+Question 8
+Which of the following is the correct CLI command for creating a function app on a consumption plan that will deploy code from the master branch of a GitHub repository?
+
+0 / 1 point
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source-url $gitrepo \
+
+ --deployment-source-branch root \
+
+ --functions-version 2
+
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source-url $gitrepo \
+
+ --deployment-source-branch master \
+
+ --functions-version 2
+
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source $gitrepo \
+
+ --deployment-source-branch root \
+
+ --functions-version 2
+
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source $gitrepo \
+
+ --deployment-source-branch master \
+
+ --functions-version 2
+
+Incorrect
+Try going back and reviewing Module 5 – Monitor GitHub events by using a webhook with Azure Functions.
+
+9.
+Question 9
+You are creating an Azure API Management service for your production API. The application that is using the API usually gets around 500k executions per month. The usage pattern of the API varies every day. 
+
+Keeping in mind that cost-effectiveness should be a priority, which tier should you choose for your API Management service?
+
+1 / 1 point
+
+Production
+
+
+Basic
+
+
+Standard
+
+
+Consumption
+
+Correct
+API Management service in the Consumption tier scales automatically based on the traffic. Also, it provides 1M calls free of cost per subscription.
+
+10.
+Question 10
+The solution that you are developing contains a service for users to chat in real-time with customer support agents via a webpage. To ensure two-way communication between client and server, you decide to use SignalR. Throughout the clients, not all of them support HTML 5. What action needs to be taken to ensure all clients can use the service?
+
+1 / 1 point
+
+Set SignalR to use WebSockets, Ajax long polling, or Forever Frame
+
+
+No action. SignalR will manage this automatically
+
+
+Notify the clients to upgrade to HTML5 to properly use the solution
+
+Correct
+A key benefit of SignalR is that it allows your application to gracefully degrade depending on the supported technologies of the client. If it doesn't support WebSockets, then Server Sent Events are used. If the client can't handle Server Sent Events, then it uses Ajax long polling, and so on.
+
