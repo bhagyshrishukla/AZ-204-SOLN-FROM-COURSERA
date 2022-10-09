@@ -1,0 +1,158 @@
+1.
+Question 1
+You are developing an e-commerce application. The application generates millions of orders and captures user behavior. Users must be informed as and when there is progress for their order. The application must support the sales and marketing team to analyze live user behavior.
+
+Which Azure service should you use to do this?
+
+1 / 1 point
+
+Azure Service Bus
+
+
+Azure Event Hubs
+
+
+Azure Event Grid
+
+Correct
+Azure Event Hubs is a big data pipeline. It facilitates the capture, retention, and replay of telemetry and event stream data. 
+
+2.
+Question 2
+You plan on creating an Azure Event Hub namespace with the help of CLI commands. Which is the command that you should execute?
+
+0 / 1 point
+
+az namespace eventhubs create
+
+
+az eventhubs namespace create
+
+
+az create namespace eventhubs
+
+Incorrect
+Try going back and reviewing Create an Event Hub using the Azure CLI.
+
+3.
+Question 3
+You are developing an application that produces millions of telemetry data per hour. You plan to use Azure Event Hubs to ingest and consume data.
+
+Which protocols you can use to ingest or consume data?
+
+Select all that apply.
+
+1 / 1 point
+
+HTTPS
+
+Correct
+Azure Event Hubs supports three protocols for consumers and producers: AMQP, Kafka, and HTTPS.
+
+
+AMQP
+
+Correct
+Azure Event Hubs supports three protocols for consumers and producers: AMQP, Kafka, and HTTPS.
+
+
+Kafka
+
+Correct
+Azure Event Hubs supports three protocols for consumers and producers: AMQP, Kafka, and HTTPS.
+
+4.
+Question 4
+You are developing a solution using Azure Event Hubs. You need to create a resource group, Event Hubs namespace, and an Event Hub using Azure CLI.
+
+Which three commands should you use?
+
+1 / 1 point
+
+az eventhubs namespace create
+
+Correct
+This CLI command will create an EventHubs namespace.
+
+
+az group create
+
+Correct
+This CLI command will create a new resource group.
+
+B. az eventhubs namespace update
+
+Feedback: Try going back and reviewing Create an Event Hub using the Azure CLI.
+
+
+az eventhubs eventhub update
+
+
+az eventhubs eventhub create
+
+Correct
+This CLI command will create an Event Hub.
+
+5.
+Question 5
+Which terminologies are used to define entities that read data from the Event Hubs?
+
+Select all options that apply.
+
+1 / 1 point
+
+Subscribers
+
+Correct
+An entity that reads data from the Event Hubs is called a consumer or a subscriber.
+
+
+Consumers
+
+Correct
+n entity that reads data from the Event Hubs is called a consumer or a subscriber.
+
+
+Publishers
+
+6.
+Question 6
+You are planning on using Azure Event Hubs to process events. What is the maximum size limit of a publication of an event?
+
+1 / 1 point
+
+256 KB:
+
+
+512 KB
+
+
+1 MB
+
+Correct
+A single publication can't exceed 1 MB.
+
+7.
+Question 7
+What are the two programmatic methods that receive and process events from an EventHub?
+
+Select two options.
+
+1 / 1 point
+
+EventHostReceiver
+
+
+EventProcessorHost
+
+Correct
+This programmatic method can be used to receive and process events.
+
+
+EventHubReceiver
+
+Correct
+This programmatic method can be used to receive and process events.
+
+
+EventReceiver
