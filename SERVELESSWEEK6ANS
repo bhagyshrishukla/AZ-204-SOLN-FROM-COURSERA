@@ -1,0 +1,21 @@
+1=consumption
+2=vary by header AUTHRIZATION and caching type externa
+3=APLI MGMT WEBSERVICE TO CLIENT THE BACKEND  ANS BASIC AUTH AND CERTIFICATE AUTH
+4=CHECK HTTP HEADER
+5 IMPLEMT CORS RULE ON THE STORAGE 
+6 ANS NOTHING SIGNAL R WILL MANAGE THIS AUTOMATICALLY
+7 false 
+
+
+Question 3
+You provide an Azure API Management managed web service to clients. The back-end web service implements HTTP Strict Transport Security (HSTS). Every request to the backend service must include a valid HTTP authorization header. You need to configure the Azure API Management instance with an authentication policy.
+
+Which two policies can you use?
+ans=basic auth and certificate auth
+4 you are planning  publish apu ans check http header
+5you storage service allow only some domain ans implement cors ri=ule on the storage
+6 You are developing a solution that will need to ensure two-way communication between the client and server. You make use of SignalR. You are aware that some clients will not support HTML 5. What should you do?
+
+0 / 1 point
+ans  nothing signL R WILL MANAGE THIS AUTOMQATICALLY
+7 TRUE FALSE ANS  FALSE
