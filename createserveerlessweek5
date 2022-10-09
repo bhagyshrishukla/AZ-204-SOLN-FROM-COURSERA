@@ -1,0 +1,191 @@
+Congratulations! You passed!
+Grade received 85.71%
+Latest Submission Grade 85.71%
+To pass 80% or higher
+1.
+Question 1
+You are developing an application named Application1 which uses an Azure Function. The source code for Application1 is in a GitHub repository under the master branch. You need to create your function and configure it to deploy code from a GitHub repository.
+
+Which of these Azure CLI commands should you use?
+
+0 / 1 point
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source-url $gitrepo \
+
+ --deployment-source-branch root \
+
+ --functions-version 2
+
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source $gitrepo \
+
+ --deployment-source-branch master \
+
+ --functions-version 2
+
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source-url $gitrepo \
+
+ --deployment-source-branch master \
+
+ --functions-version 2
+
+
+az functionapp create --name $functionAppName \
+
+ --storage-account $storageName \
+
+ --consumption-plan-location $region \
+
+ --resource-group myResourceGroup \
+
+ --deployment-source $gitrepo \
+
+ --deployment-source-branch root \
+
+ --functions-version 2
+
+Incorrect
+Try going back and reviewing Set up a webhook for a GitHub repository.
+
+2.
+Question 2
+What is a payload URL in webhooks?
+
+1 / 1 point
+
+The URL of the client that will receive the webhook POST requests.
+
+
+The URL of the server that will receive the webhook GET requests.
+
+
+The URL of the server that will receive the webhook POST requests.
+
+
+The URL of the client that will receive the webhook GET requests.
+
+Correct
+The payload URL is the URL of the server that will receive the webhook POST requests.
+
+3.
+Question 3
+Which are the three sections that form the structure of a Gollum event payload?
+
+Select all options that apply.
+
+1 / 1 point
+
+Pages
+
+Correct
+This is one of the sections that you will identify in a Gollum event payload.
+
+
+Sender
+
+Correct
+This is one of the sections that you will identify in a Gollum event payload.
+
+
+Resources
+
+
+Parameters
+
+
+Repository
+
+Correct
+This is one of the sections that you will identify in a Gollum event payload.
+
+4.
+Question 4
+You trigger an Azure Function with a GitHub event. What kind of hashing algorithm does GitHub use to encrypt the request it sends to your function?
+
+1 / 1 point
+
+MD5
+
+
+HMAC SHA2
+
+
+HMAC SHA1
+
+Correct
+GitHub uses an HMAC SHA1 hex digest to compute the hash.
+
+5.
+Question 5
+You configure an Azure Function to receive payloads and you want to limit requests coming from GitHub. To do that, you choose on securing the webhook payloads with a secret. How does the hash signature need to start?
+
+1 / 1 point
+
+sha=1
+
+
+=sha1
+
+
+sha1=
+
+Correct
+The hash signature starts with the text sha1=.
+
+6.
+Question 6
+You plan on setting up a webhook for a GitHub repository that will trigger an Azure Function. How many steps are involved in achieving this?
+
+1 / 1 point
+
+Four steps
+
+
+One step only
+
+
+Two steps 
+
+Correct
+Setting up a webhook is a two-step process. You specify how you want your webhook to behave through GitHub and what events it should listen to. Then you set up your function in Azure Functions to receive and manage the payload received from the webhook.
+
+7.
+Question 7
+True or False?
+
+Setting a webhook secret allows you to ensure that POST requests sent to the payload URL are from GitHub. When you set a secret, you'll receive a header named “x-sign-hub” in the webhook POST request.
+
+1 / 1 point
+
+True
+
+
+False
+
+Correct
+When you set a secret, you'll receive the x-hub-signature header in the webhook POST request.
