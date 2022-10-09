@@ -1,0 +1,96 @@
+Congratulations! You passed!
+Grade received 80%
+To pass 80% or higher
+1.
+Question 1
+True or False?
+
+To be able to develop, test and deploy Azure Functions locally using Visual Studio, you also need to install the Azure Functions and Web Job Tools extension.
+
+0 / 1 point
+
+True
+
+
+False RIGHT AMSWER
+
+Incorrect
+The Azure Functions and Web Jobs Tools extension is included in Visual Studio and it does not require installing.
+
+2.
+Question 2
+You are planning on creating a solution that will automatically run an Azure Function App when a file is uploaded or modified in an Azure Blob Storage. What type of trigger should you configure on the Azure Function App?
+
+1 / 1 point
+
+Blob trigger
+
+
+Event Hub trigger
+
+
+HTTP trigger
+
+Correct
+This type of function runs when a file is uploaded or modified in Azure Blob storage.
+
+3.
+Question 3
+You are building a solution in which an Azure Function is triggered by an HTTP request. You want to ensure that the HTTP request includes in the header a specific key only for that function, that enables the Azure Function runtime to authorize the request. What type of level access rights should be configured on the Function App?
+
+1 / 1 point
+
+Function
+
+
+Admin
+
+
+Anonymous
+
+Correct
+With this access set-up, the HTTP request must provide a key that enables the Azure Function runtime to authorize the request.
+
+4.
+Question 4
+You plan on setting up continuous deployment to maintain source control on your functions code. Which of the following deployment sources are a viable option in Azure?
+
+1 / 1 point
+
+Bitbucket
+
+Correct
+Bitbucket can be configured as a deployment source in Azure.
+
+
+OneDrive
+
+Correct
+OneDrive can be configured as a deployment source in Azure.
+
+
+Box
+
+
+Github
+
+Correct
+GitHub can be configured as a deployment source in Azure.
+
+5.
+Question 5
+What is the Azure CLI command that permits zip deployment?
+
+1 / 1 point
+
+az functionapp deployment
+
+
+az functionapp create
+
+
+az functionapp zip
+
+Correct
+You can perform zip deployment using the functionapp deployment command in the Azure CLI.
+
